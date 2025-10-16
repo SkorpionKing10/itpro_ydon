@@ -1,4 +1,4 @@
-image: node:20-alpine
+image: alpine:latest
 
 stages:
   - deploy
@@ -6,9 +6,12 @@ stages:
 pages:
   stage: deploy
   script:
+    # Ordner für GitLab Pages erstellen
     - mkdir public
+    # Alle Dateien kopieren
     - cp -r * public/
-    - rm -rf public/.gitlab-ci.yml public/.git/
+    # GitLab-spezifische Dateien entfernen
+    - rm -rf public/.git public/.gitlab-ci.yml
   artifacts:
     paths:
       - public
