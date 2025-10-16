@@ -1,12 +1,10 @@
-image: alpine:latest
-
 pages:
   stage: deploy
   script:
-    - mkdir .public
-    - cp -r * .public
+    - echo "Pages deploy"
   artifacts:
     paths:
-      - .public
+      - public
+  publish: public
   only:
-    - main  # oder master, je nachdem wie dein Hauptbranch heißt
+    - main
