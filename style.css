@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #0067b8;
+  background-color: rgba(209, 51, 70, 1);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -32,8 +32,8 @@ section {
 }
 
 h2 {
-  color: #0067b8;
-  border-bottom: 2px solid #0067b8;
+  color: rgba(209, 51, 70, 1);
+  border-bottom: 2px solid rgba(209, 51, 70, 1);
   padding-bottom: 0.4rem;
 }
 
@@ -43,7 +43,7 @@ ul {
 }
 
 button {
-  background-color: #0067b8;
+  background-color: rgba(209, 51, 70, 1);
   color: white;
   border: none;
   padding: 0.7rem 1.4rem;
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: #004f8c;
+  background-color: rgba(169, 35, 53, 1); 
 }
 
 footer {
@@ -65,7 +65,7 @@ footer {
 }
 
 footer a {
-  color: #0067b8;
+  color: rgba(209, 51, 70, 1);
   text-decoration: none;
 }
 
